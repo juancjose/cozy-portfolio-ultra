@@ -340,3 +340,9 @@ main>.frame:first-child{border-top:1px solid var(--line)}
   .hD__top .hD__nav{grid-column:1;justify-content:flex-start}
   .hD__top .hD__sq{grid-column:2}
 }
+/* X · Todo a sangre */
+body{background:var(--bg)}
+main{padding-top:0}
+.frame{width:100%;margin-inline:0;border-inline:0}
+main>.frame:first-child{border-top:0}
+.frame.hD{min-height:100vh;min-height:100svh}
