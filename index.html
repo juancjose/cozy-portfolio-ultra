@@ -16,9 +16,9 @@
 <link rel="apple-touch-icon" href="assets/apple-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/RATON_SLIDER.webp">
-<link rel="stylesheet" href="styles.css?v=202610242330">
+<link rel="stylesheet" href="styles.css?v=202610242115">
 </head>
 <body id="top">
 <a class="skip" href="#main">Saltar al contenido</a>
@@ -26,7 +26,7 @@
 <!-- barra compacta que aparece al bajar -->
 <header class="bar" aria-label="Navegación rápida">
   <a class="bar__logo" href="#top" aria-label="Cozy Sport, volver al inicio"><img src="assets/cozy-wordmark-white.svg" alt="Cozy Sport" width="327" height="66"></a>
-  <nav class="bar__nav mono" aria-label="Secciones">
+  <nav class="bar__nav" aria-label="Secciones">
     <a href="#nosotros">Nosotros</a><a href="#proceso">Proceso</a><a href="#servicios">Servicios</a><a href="#atletas">Atletas</a><a href="#contacto">Contacto</a>
   </nav>
   <a class="sq sq--sm" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener" aria-label="Tienda online (se abre en otra pestaña)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
@@ -38,18 +38,20 @@
 <section class="frame hero" aria-labelledby="hero-title">
   <div class="hero__photo">
     <img src="assets/RATON_SLIDER.webp" alt="Footgolfista del #TeamCozy pateando la pelota" width="1920" height="1200" fetchpriority="high">
-    <nav class="hero__nav mono" aria-label="Principal">
-      <a href="#top" aria-current="page">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#atletas">Atletas</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <a class="hero__logo" href="#top" aria-label="Cozy Sport"><img src="assets/cozy-wordmark-white.svg" alt="Cozy Sport" width="327" height="66"></a>
-    <a class="sq hero__sq" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener" aria-label="Ir a la tienda online (se abre en otra pestaña)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-    <p class="hero__tag mono">Indumentaria deportiva personalizada, hecha por argentinos <span class="hl">para el mundo.</span></p>
-    <p class="hero__mini mono">Footgolf. Triatlón. Running.</p>
+    <div class="hero__top">
+      <a class="hero__logo" href="#top" aria-label="Cozy Sport, inicio"><img src="assets/cozy-wordmark-white.svg" alt="Cozy Sport" width="327" height="66"></a>
+      <nav class="hero__nav display" aria-label="Principal">
+        <a href="#top" aria-current="page">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#atletas">Atletas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="sq hero__sq" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener" aria-label="Ir a la tienda online (se abre en otra pestaña)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    </div>
+    <p class="hero__tag display">Indumentaria deportiva<br>personalizada, hecha<br>por argentinos<br><span class="acc">para el mundo.</span></p>
+    <p class="hero__mini lbl">Footgolf · Triatlón · Running</p>
     <h1 id="hero-title" class="hero__title display"><span class="sr">Cozy Sport, desde 1983</span><span aria-hidden="true">Cozy<br class="br-m"> Sport</span></h1>
   </div>
 
@@ -63,10 +65,10 @@
     <div class="hero__copy">
       <p class="mono hero__intro">Somos una empresa familiar de Beccar. <b>Diseñamos y fabricamos indumentaria deportiva</b> pensando cada prenda como única, <b>para que la persona que la usa sienta que es especial.</b> Industria nacional desde 1983.</p>
       <dl class="counters" aria-label="Algunas cuestiones importantes sobre nosotros">
-        <div class="counter"><dt class="mono">Proyectos</dt><dd class="mono"><span class="count" data-to="4982">4.982</span></dd></div>
-        <div class="counter"><dt class="mono">Impresiones</dt><dd class="mono"><span class="count" data-to="158962">158.962</span></dd></div>
-        <div class="counter"><dt class="mono">Clientes</dt><dd class="mono"><span class="count" data-to="2589">2.589</span></dd></div>
-        <div class="counter"><dt class="mono">Países</dt><dd class="mono"><span class="count" data-to="10">10</span></dd></div>
+        <div class="counter"><dt class="lbl">Proyectos</dt><dd class="num-v"><span class="count" data-to="4982">4.982</span></dd></div>
+        <div class="counter"><dt class="lbl">Impresiones</dt><dd class="num-v"><span class="count" data-to="158962">158.962</span></dd></div>
+        <div class="counter"><dt class="lbl">Clientes</dt><dd class="num-v"><span class="count" data-to="2589">2.589</span></dd></div>
+        <div class="counter"><dt class="lbl">Países</dt><dd class="num-v"><span class="count" data-to="10">10</span></dd></div>
       </dl>
     </div>
   </div>
@@ -89,7 +91,7 @@
 <!-- PROCESO -->
 <section id="proceso" class="frame steps" aria-labelledby="proceso-title">
   <header class="sec-head">
-    <p class="mono kicker">[01] Proceso</p>
+    <p class="kicker">[01] Proceso</p>
     <h2 id="proceso-title" class="display h2">Somos un equipo, <span class="acc">comprometido a crear tus sueños</span></h2>
   </header>
   <ol class="steps__list">
@@ -114,7 +116,7 @@
 <!-- VIDEO -->
 <section class="frame reel" id="video" aria-labelledby="reel-title">
   <div class="reel__text">
-    <p class="mono kicker kicker--dark">En movimiento</p>
+    <p class="kicker kicker--dark">En movimiento</p>
     <h2 id="reel-title" class="display reel__title">Indumentaria<br>y accesorios</h2>
     <p class="mono reel__sub"><b>¡Todo lo que necesites!</b></p>
   </div>
@@ -128,17 +130,17 @@
 <section id="servicios" class="frame services" aria-labelledby="serv-title">
   <header class="sec-head sec-head--row">
     <div>
-      <p class="mono kicker">[02] Nuestro servicio</p>
+      <p class="kicker">[02] Nuestro servicio</p>
       <h2 id="serv-title" class="display h2">Brindando el <span class="acc">mejor servicio</span></h2>
     </div>
     <p class="mono sec-head__aside">Estamos juntos en este viaje, <span class="hl">desde el primer momento hasta la competencia.</span></p>
   </header>
   <ul class="svc" role="list">
-    <li class="svc__row reveal"><span class="mono svc__i">S/01</span><h3 class="display">Diseños personalizados</h3><p class="mono">Pasamos tus ideas a formato digital.</p></li>
-    <li class="svc__row reveal"><span class="mono svc__i">S/02</span><h3 class="display">Bocetos</h3><p class="mono">Bocetos a mano alzada, siempre buscando nuevas tendencias.</p></li>
-    <li class="svc__row reveal"><span class="mono svc__i">S/03</span><h3 class="display">La meta</h3><p class="mono">Llegar a la meta, cumpliendo con tus expectativas.</p></li>
-    <li class="svc__row reveal"><span class="mono svc__i">S/04</span><h3 class="display">Volamos a tu lado</h3><p class="mono">Estamos juntos en este viaje, ¡desde el primer momento hasta la competencia!</p></li>
-    <li class="svc__row reveal"><span class="mono svc__i">S/05</span><h3 class="display">El color que esperás</h3><p class="mono">Utilizamos las mejores tintas del mercado, para llegar al color que imaginaste.</p></li>
+    <li class="svc__row reveal"><span class="svc__i lbl">S/01</span><h3 class="display">Diseños personalizados</h3><p class="mono">Pasamos tus ideas a formato digital.</p></li>
+    <li class="svc__row reveal"><span class="svc__i lbl">S/02</span><h3 class="display">Bocetos</h3><p class="mono">Bocetos a mano alzada, siempre buscando nuevas tendencias.</p></li>
+    <li class="svc__row reveal"><span class="svc__i lbl">S/03</span><h3 class="display">La meta</h3><p class="mono">Llegar a la meta, cumpliendo con tus expectativas.</p></li>
+    <li class="svc__row reveal"><span class="svc__i lbl">S/04</span><h3 class="display">Volamos a tu lado</h3><p class="mono">Estamos juntos en este viaje, ¡desde el primer momento hasta la competencia!</p></li>
+    <li class="svc__row reveal"><span class="svc__i lbl">S/05</span><h3 class="display">El color que esperás</h3><p class="mono">Utilizamos las mejores tintas del mercado, para llegar al color que imaginaste.</p></li>
   </ul>
 </section>
 
@@ -146,7 +148,7 @@
 <section id="atletas" class="frame athletes" aria-labelledby="ath-title">
   <header class="sec-head sec-head--row">
     <div>
-      <p class="mono kicker">[03] Deportistas #TeamCozy</p>
+      <p class="kicker">[03] Deportistas #TeamCozy</p>
       <h2 id="ath-title" class="display h2">Conocé a los que <span class="acc">transpiran</span></h2>
     </div>
     <p class="mono sec-head__aside">Deportistas reales. Transpiración real. <span class="hl">Estos son los que nos representan.</span></p>
@@ -177,7 +179,7 @@
     <h2 id="banner-title" class="display banner__title">De la idea<br>a la cancha</h2>
     <div class="banner__cta">
       <p class="mono"><b class="acc">Apasionados por el deporte.</b> Ingresá a nuestra tienda online. Comprá desde tu casa, nosotros te lo llevamos.</p>
-      <a class="btn mono" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener">Ir a la tienda ↗</a>
+      <a class="btn" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener">Ir a la tienda ↗</a>
     </div>
   </div>
 </section>
@@ -186,7 +188,7 @@
 <section id="nosotros" class="frame story" aria-labelledby="story-title">
   <div class="story__year" aria-hidden="true"><span class="display">19</span><span class="display">83</span></div>
   <div class="story__text">
-    <p class="mono kicker">[04] Nuestra historia</p>
+    <p class="kicker">[04] Nuestra historia</p>
     <h2 id="story-title" class="display h2">Hecho por argentinos <span class="acc">para el mundo</span></h2>
     <p class="mono story__lead">En 1983 comienza una etapa especial en la Argentina y, así, una idea de cambio. Inaugurábamos nuestro local de venta al público, con prendas exclusivas y talles especiales. <span class="hl">Cozy, que en inglés significa confortable,</span> comenzaba su recorrido.</p>
     <div class="story__cols">
@@ -202,7 +204,7 @@
 <section id="equipo" class="frame team" aria-labelledby="team-title">
   <header class="sec-head sec-head--row">
     <div>
-      <p class="mono kicker">[05] El equipo</p>
+      <p class="kicker">[05] El equipo</p>
       <h2 id="team-title" class="display h2">Conocé el equipo de <span class="acc">Cozy Sport</span></h2>
     </div>
   </header>
@@ -222,19 +224,38 @@
 
 <!-- CONTACTO -->
 <section id="contacto" class="frame contact" aria-labelledby="contact-title">
-  <div class="contact__main">
-    <p class="mono kicker">[06] Contactanos</p>
-    <h2 id="contact-title" class="display contact__big">¡No dudes en<br><span class="acc">escribirnos!</span></h2>
-    <a class="contact__mail mono" href="mailto:info@cozysport.com">info@cozysport.com ↗</a>
+  <header class="sec-head sec-head--row">
+    <div>
+      <p class="kicker">[06] Contactanos</p>
+      <h2 id="contact-title" class="display contact__big">¡No dudes en <span class="acc">escribirnos!</span></h2>
+    </div>
+    <p class="sec-head__aside">Fábrica en Beccar, Buenos Aires. <span class="hl">Escribinos, llamanos o vení a conocernos.</span></p>
+  </header>
+  <div class="cards">
+    <a class="card card--mail" href="mailto:info@cozysport.com">
+      <span class="card__lbl lbl">Email</span>
+      <span class="card__big">info@cozysport.com</span>
+      <span class="card__go" aria-hidden="true">↗</span>
+    </a>
+    <a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Uruguay+3442+Beccar+Buenos+Aires" target="_blank" rel="noopener">
+      <span class="card__lbl lbl">Fábrica — Cozy Sport SA</span>
+      <span class="card__val">Uruguay 3442, Beccar<br>Buenos Aires · CP 1643<br>Argentina</span>
+      <span class="card__cta">Cómo llegar</span>
+      <span class="card__go" aria-hidden="true">↗</span>
+    </a>
+    <div class="card card--list">
+      <span class="card__lbl lbl">Teléfonos</span>
+      <a class="card__row" href="tel:+541147233355"><span>011 4723 33 55</span><span class="card__row-cta">Llamar</span></a>
+      <a class="card__row" href="tel:+541147232255"><span>011 4723 22 55</span><span class="card__row-cta">Llamar</span></a>
+      <a class="card__row" href="tel:+541147233373"><span>011 4723 33 73</span><span class="card__row-cta">Llamar</span></a>
+    </div>
   </div>
-  <div class="contact__data mono">
-    <div><h3>Fábrica — Cozy Sport SA</h3><address>Uruguay 3442 – Beccar<br>Buenos Aires – CP 1643<br>Argentina</address>
-      <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Uruguay+3442+Beccar+Buenos+Aires" target="_blank" rel="noopener">Cómo llegar ↗</a></div>
-    <div><h3>Teléfonos</h3>
-      <p><a href="tel:+541147233355">011 4723 33 55</a><br><a href="tel:+541147232255">011 4723 22 55</a><br><a href="tel:+541147233373">011 4723 33 73</a></p></div>
-    <div><h3>Seguinos</h3>
-      <p><a href="https://instagram.com/cozysport" target="_blank" rel="noopener">Instagram</a><br><a href="https://www.facebook.com/cozysport" target="_blank" rel="noopener">Facebook</a><br><a href="https://twitter.com/cozysport" target="_blank" rel="noopener">Twitter</a><br><a href="https://www.youtube.com/channel/UCqqrq2bQ2Q-Dgik3gxvm1Yw" target="_blank" rel="noopener">YouTube</a></p></div>
-  </div>
+  <ul class="socials" role="list" aria-label="Redes sociales">
+    <li><a class="social" href="https://instagram.com/cozysport" target="_blank" rel="noopener"><span class="lbl">Seguinos</span><b class="display">Instagram</b><span class="card__go" aria-hidden="true">↗</span></a></li>
+    <li><a class="social" href="https://www.facebook.com/cozysport" target="_blank" rel="noopener"><span class="lbl">Seguinos</span><b class="display">Facebook</b><span class="card__go" aria-hidden="true">↗</span></a></li>
+    <li><a class="social" href="https://www.youtube.com/channel/UCqqrq2bQ2Q-Dgik3gxvm1Yw" target="_blank" rel="noopener"><span class="lbl">Mirá</span><b class="display">YouTube</b><span class="card__go" aria-hidden="true">↗</span></a></li>
+    <li><a class="social" href="https://twitter.com/cozysport" target="_blank" rel="noopener"><span class="lbl">Seguinos</span><b class="display">Twitter</b><span class="card__go" aria-hidden="true">↗</span></a></li>
+  </ul>
 </section>
 </main>
 
@@ -243,24 +264,24 @@
   <div class="foot__panel">
     <div class="foot__brand">
       <img src="assets/cozy-wordmark-white.svg" alt="Cozy Sport" width="327" height="66">
-      <p class="mono">Industria nacional desde 1983.</p>
+      <p>Indumentaria deportiva personalizada. Industria nacional desde 1983.</p>
+      <a class="btn" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener">Tienda online ↗</a>
     </div>
-    <nav class="foot__col mono" aria-label="Navegación del pie">
-      <h3>Navegación</h3>
+    <nav class="foot__col" aria-label="Navegación del pie">
+      <h3><span>Navegación</span></h3>
       <a href="#top">Inicio</a><a href="#nosotros">Nosotros</a><a href="#proceso">Proceso</a><a href="#servicios">Servicios</a><a href="#atletas">Atletas</a><a href="#equipo">Equipo</a>
     </nav>
-    <div class="foot__col mono">
-      <h3>Contacto</h3>
-      <a href="mailto:info@cozysport.com">info@cozysport.com</a><a href="tel:+541147233355">011 4723 33 55</a><a href="https://instagram.com/cozysport" target="_blank" rel="noopener">Instagram</a><a href="https://cozy-sport.vercel.app" target="_blank" rel="noopener">Tienda online</a>
+    <div class="foot__col">
+      <h3><span>Contacto</span></h3>
+      <a href="mailto:info@cozysport.com">info@cozysport.com</a><a href="tel:+541147233355">011 4723 33 55</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Uruguay+3442+Beccar+Buenos+Aires" target="_blank" rel="noopener">Uruguay 3442, Beccar</a><a href="https://instagram.com/cozysport" target="_blank" rel="noopener">Instagram</a>
     </div>
-    <div class="foot__base mono">
-      <span>Cozy Sport © <span id="y">2026</span></span>
-      <span>Uruguay 3442 – Beccar</span>
+    <div class="foot__base">
+      <span>Cozy Sport © <span id="y">2026</span> · Hecho por argentinos para el mundo</span>
       <a href="#top" class="foot__up">Volver arriba ↑</a>
     </div>
   </div>
   <div class="foot__giant" aria-hidden="true"><img src="assets/cozy-mark.svg" alt="" width="886" height="663"></div>
 </footer>
-<script src="main.js?v=202610242330" defer></script>
+<script src="main.js?v=202610242115" defer></script>
 </body>
 </html>
