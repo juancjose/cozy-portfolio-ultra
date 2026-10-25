@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/RATON_SLIDER.webp">
-<link rel="stylesheet" href="styles.css?v=202610242155">
+<link rel="stylesheet" href="styles.css?v=202610242255">
 </head>
 <body id="top">
 <a class="skip" href="#main">Saltar al contenido</a>
@@ -35,41 +35,31 @@
 <main id="main">
 
 <!-- HERO -->
-<section class="frame hero" aria-labelledby="hero-title">
-  <div class="hero__photo">
-    <img src="assets/RATON_SLIDER.webp" alt="Footgolfista del #TeamCozy pateando la pelota" width="1920" height="1200" fetchpriority="high">
-    <nav class="hero__nav mono" aria-label="Principal">
-      <a href="#top" aria-current="page">Inicio</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#atletas">Atletas</a>
-      <a href="#contacto">Contacto</a>
+<section class="frame hD" aria-labelledby="hero-title">
+  <img class="hD__bg" src="assets/Untitled-2.webp" alt="" width="1064" height="500" fetchpriority="high">
+  <header class="hD__top chk">
+    <nav class="hD__nav mono" aria-label="Principal">
+      <a href="#top" aria-current="page">Inicio</a><a href="#nosotros">Nosotros</a><a href="#proceso">Proceso</a><a href="#servicios">Servicios</a><a href="#atletas">Atletas</a><a href="#contacto">Contacto</a>
     </nav>
-    <a class="hero__logo" href="#top" aria-label="Cozy Sport"><img src="assets/cozy-wordmark-white.svg" alt="Cozy Sport" width="327" height="66"></a>
-    <a class="sq hero__sq" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener" aria-label="Ir a la tienda online (se abre en otra pestaña)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-    <p class="hero__tag mono">Indumentaria deportiva personalizada, hecha por argentinos <span class="hl">para el mundo.</span></p>
-    <p class="hero__mini mono">Footgolf. Triatlón. Running.</p>
-    <h1 id="hero-title" class="hero__title display"><span class="sr">Cozy Sport, desde 1983</span><span aria-hidden="true">Cozy<br class="br-m"> Sport</span></h1>
+    <a class="sq hD__sq" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener" aria-label="Ir a la tienda online (se abre en otra pestaña)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+  </header>
+  <div class="hD__center">
+    <p class="hD__kick mono chk">Footgolf · Triatlón · Running</p>
+    <h1 id="hero-title" class="hD__title chk"><img src="assets/cozy-wordmark-white.svg" alt="Cozy Sport" width="3270" height="660"></h1>
+    <p class="hD__since mono chk" aria-hidden="true">Sport · Desde 1983</p>
+    <p class="hD__tag mono chk">Indumentaria deportiva personalizada, hecha por argentinos <span class="hl">para el mundo.</span></p>
+    <p class="hD__intro mono chk">Somos una empresa familiar de Beccar. <b>Diseñamos y fabricamos indumentaria deportiva</b> pensando cada prenda como única, <b>para que la persona que la usa sienta que es especial.</b> Industria nacional desde 1983.</p>
+    <div class="hD__ctas chk">
+      <a class="hD__btn hD__btn--acc mono" href="https://cozy-sport.vercel.app" target="_blank" rel="noopener">Ir a la tienda ↗</a>
+      <a class="hD__btn mono" href="#nosotros">Conocenos</a>
+    </div>
   </div>
-
-  <!-- numeral partido: arriba acento sobre la foto, abajo negro sobre el bloque -->
-  <div class="hero__num" aria-hidden="true">
-    <div class="num num--top"><span class="num__d display">83</span></div>
-    <div class="num num--bot"><span class="num__d display">83</span></div>
-  </div>
-
-  <div class="hero__block">
-    <div class="hero__copy">
-      <p class="mono hero__intro">Somos una empresa familiar de Beccar. <b>Diseñamos y fabricamos indumentaria deportiva</b> pensando cada prenda como única, <b>para que la persona que la usa sienta que es especial.</b> Industria nacional desde 1983.</p>
-      <dl class="counters" aria-label="Algunas cuestiones importantes sobre nosotros">
+  <dl class="hD__counters chk" aria-label="Algunas cuestiones importantes sobre nosotros">
         <div class="counter"><dt class="mono">Proyectos</dt><dd class="mono"><span class="count" data-to="4982">4.982</span></dd></div>
         <div class="counter"><dt class="mono">Impresiones</dt><dd class="mono"><span class="count" data-to="158962">158.962</span></dd></div>
         <div class="counter"><dt class="mono">Clientes</dt><dd class="mono"><span class="count" data-to="2589">2.589</span></dd></div>
         <div class="counter"><dt class="mono">Países</dt><dd class="mono"><span class="count" data-to="10">10</span></dd></div>
-      </dl>
-    </div>
-  </div>
+  </dl>
 </section>
 
 <!-- BANDA DE PALABRAS -->
@@ -261,6 +251,6 @@
   </div>
   <div class="foot__giant" aria-hidden="true"><span class="display">C</span></div>
 </footer>
-<script src="main.js?v=202610242155" defer></script>
+<script src="main.js?v=202610242255" defer></script>
 </body>
 </html>

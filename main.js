@@ -6,7 +6,7 @@
   const y = d.getElementById('y'); if (y) y.textContent = new Date().getFullYear();
 
   // barra compacta: aparece al pasar el hero
-  const bar = d.querySelector('.bar'), hero = d.querySelector('.hero');
+  const bar = d.querySelector('.bar'), hero = d.querySelector('.hD, .hero');
   if (bar && hero) new IntersectionObserver(([e]) => bar.classList.toggle('is-on', !e.isIntersecting), { rootMargin: '-80px 0px 0px 0px' }).observe(hero);
 
   // sección activa en la barra
